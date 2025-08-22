@@ -1,3 +1,6 @@
+import message from "../assets/message.png"
+import phone from "../assets/phone.png"
+
 export default function HomePage() {
     return (
         <div className="home">
@@ -13,6 +16,15 @@ export default function HomePage() {
                 </div>
                 <div className="hero-bg"></div>
             </header>
+            <main className="home-main">
+                <section className="for">
+                    <h1>LauTalk is for everyone who <br /> buys, pays, and connects.</h1>
+                    <p>Find out why students and businesses across Africa trust LauTalk every day.</p>
+                    <button>Sign Up Now!!!</button>
+                    <img className="msg-img" src={message} alt="message icon" />
+                    <img className="phn-img" src={phone} alt="phone icon" />
+                </section>
+            </main>
         </div>
     )
 }
