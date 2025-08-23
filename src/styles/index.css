@@ -6,12 +6,18 @@
     --accentColor: #3ec1d3;
     --mainFont: "Montserrat", sans-serif;
 }
-.no-scroll{
+
+.no-scroll {
     overflow: hidden;
     height: 100vh;
-  }
+}
 
-button, a {
+a {
+    color: inherit;
+}
+
+button,
+a {
     cursor: pointer;
     font-family: inherit;
     transition: all .3s ease-in-out;
@@ -50,12 +56,14 @@ button, a {
     align-items: center;
     gap: 7px;
 }
+
 .navigation form input {
     border: none;
     font-family: inherit;
     padding: 7px 4px;
     width: 100%;
 }
+
 #srch-btn {
     background-image: url(../assets/search.png);
     background-position: center;
@@ -72,8 +80,9 @@ button, a {
     gap: 15px;
 }
 
-.desk-nav a, .mob-nav a {
-    padding:  10px 20px;
+.desk-nav a,
+.mob-nav a {
+    padding: 10px 20px;
     border-radius: 5px;
     color: var(--accentColor);
     text-decoration: none;
@@ -82,29 +91,39 @@ button, a {
     font-size: 14px;
     font-weight: 500;
 }
+
 #crt-talks {
     align-items: center;
     display: inline-flex;
     gap: 5px;
 }
-.desk-nav a span, .mob-nav a span {
+
+.desk-nav a span,
+.mob-nav a span {
     display: inline-flex;
     background-image: url(../assets/create.png);
     background-position: center;
     background-size: cover;
     padding: 7px;
 }
-.desk-nav #sign, .mob-nav #sign {
+
+.desk-nav #sign,
+.mob-nav #sign {
     background-color: var(--accentColor);
     color: #fff;
 }
-.desk-nav a:hover, .mob-nav a:hover {
+
+.desk-nav a:hover,
+.mob-nav a:hover {
     border: 2px solid var(--accentColor);
 }
-.desk-nav #sign:hover, .mob-nav #sign:hover {
+
+.desk-nav #sign:hover,
+.mob-nav #sign:hover {
     color: #3ec1d3;
     background-color: transparent;
 }
+
 .menu-btn {
     padding: 3px 8px;
     box-sizing: border-box;
@@ -133,16 +152,19 @@ button, a {
     visibility: hidden;
     opacity: 0;
 }
+
 .mob-nav.active {
     visibility: visible;
     opacity: 1;
     /* max-height: 100%; */
     padding: 20px 15px;
 }
+
 .mob-btn {
     align-self: flex-end;
     margin-bottom: 5px;
 }
+
 .overlay {
     position: fixed;
     z-index: 999;
@@ -156,6 +178,7 @@ button, a {
     visibility: hidden;
     transition: all .3s ease-in-out;
 }
+
 .overlay.active {
     opacity: 1;
     visibility: visible;
@@ -165,11 +188,13 @@ button, a {
     .nav-bar {
         padding: 25px;
     }
+
     .navigation form {
         width: 30%;
     }
+
     .desk-nav a {
-        padding:  10px 15px;
+        padding: 10px 15px;
     }
 }
 
@@ -177,24 +202,32 @@ button, a {
     .nav-bar {
         padding: 15px 20px;
     }
+
     .logo {
         margin-right: 0;
     }
+
     .nav-bar .navigation {
         gap: 10px;
     }
+
     .navigation .desk-nav {
         display: none;
     }
+
     .navigation form {
         width: 60%;
     }
+
     .menu-btn {
         display: flex;
     }
 }
+
 @media screen and (min-width: 671px) {
-    .mob-nav.active, .overlay.active {
+
+    .mob-nav.active,
+    .overlay.active {
         visibility: hidden;
         opacity: 0;
     }
